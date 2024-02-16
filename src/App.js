@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from "./customers/components/Navbar/Navbar";
 import HomePage from './customers/components/HomePage/HomePage';
 import Footer from './customers/components/Footer/Footer';
+import Product from './customers/components/Product/Product';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Navbar/>
       <div >
           <HomePage/>
+          <Product/>
       </div>
       <Footer/>
     </div>
