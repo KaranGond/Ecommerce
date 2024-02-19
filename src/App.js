@@ -11,7 +11,7 @@ function App() {
     <div >  
         <Navbar/>
       <div >
-          <HomePage/>
+          {/* <HomePage/> */}
           <Product/>
       </div>
       <Footer/>
