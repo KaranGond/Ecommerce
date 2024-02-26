@@ -6,6 +6,8 @@ import Footer from './customers/components/Footer/Footer';
 import Product from './customers/components/Product/Product';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProductDetails from './customers/components/ProductDetails/ProductDetails';
+import Cart from './customers/components/Cart/Cart';
+import Checkout from './customers/components/Checkout/Checkout';
 
 function App() {
   return (
@@ -17,9 +19,12 @@ function App() {
           <Product/>
           </BrowserRouter> */}
 
-        <ProductDetails/>
+        {/* <ProductDetails/> */}
 
-
+          {/* <Cart/> */}
+          <BrowserRouter>
+          <Checkout/>
+          </BrowserRouter>
       </div>
       <Footer />
     </div>
