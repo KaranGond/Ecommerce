@@ -1,36 +1,22 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Navbar from "./customers/components/Navbar/Navbar";
-import HomePage from './customers/components/HomePage/HomePage';
-import Footer from './customers/components/Footer/Footer';
-import Product from './customers/components/Product/Product';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ProductDetails from './customers/components/ProductDetails/ProductDetails';
-import Cart from './customers/components/Cart/Cart';
-import Checkout from './customers/components/Checkout/Checkout';
-import Order from './customers/components/Order/Order';
-import OrderDetails from './customers/components/Order/OrderDetails';
+import Navigation from './customer/Components/Navbar/Navigation';
+import CustomerRoutes from './Routers/CustomerRoutes';
+import AdminRoutes from './Routers/AdminRoutes';
+import NotFound from './Pages/Notfound';
+import AdminPannel from './Admin/AdminPannel';
+// import Routers from './Routers/Routers';
 
 function App() {
+  const isAdmin=true;
   return (
-    <div >
-      <Navbar />
-      <div >
-        {/* <HomePage/> */}
-        {/* <BrowserRouter>
-          <Product/>
-          </BrowserRouter> */}
-
-        {/* <ProductDetails/> */}
-
-          {/* <Cart/> */}
-          {/* <BrowserRouter>
-          <Checkout/>
-          </BrowserRouter> */}
-          {/* <Order/> */}
-          <OrderDetails/>
-      </div>
-      <Footer />
+    <div className="">
+      
+      <Routes>
+        <Route path="/*" element={<CustomerRoutes />} />
+        <Route path="/admin/*" element={<AdminPannel />} />
+        
+      </Routes>
     </div>
   );
 }

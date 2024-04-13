@@ -1,0 +1,17 @@
+{/* <Navbar /> */}
+      <div >
+        {/* <HomePage/> */}
+        {/* <BrowserRouter>
+          <Product/>
+          </BrowserRouter> */}
+
+        {/* <ProductDetails/> */}
+
+          {/* <Cart/> */}
+          {/* <BrowserRouter>
+          <Checkout/>
+          </BrowserRouter> */}
+          {/* <Order/> */}
+          {/* <OrderDetails/> */}
+      </div>
+      {/* <Footer /> */}
